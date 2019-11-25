@@ -1,0 +1,113 @@
+body {
+    background-color: #F2EDF3;
+    color: #175EF0;
+    font-family: 'AmericanCaptain';
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #162CA2;
+}
+
+h2 {
+    color: #862528;
+}
+
+.intro-wrapper {
+	position: relative;
+	background-image: url("../img/capi.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+	z-index: 3;
+}
+
+.intro {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	padding: 20px;
+    margin: auto;
+}
+
+.intro h1 {
+    color: #F2EDF3;
+    font-size: 60px;
+}
+
+.scroll-button {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.scroll-button a {
+    font-size: 40px;
+    background-color: #175EF0;
+    color: #ffffff;
+    border: 8px solid #862528;
+    border-radius: 50px;
+    padding: 0px 6px;
+    padding-top: 2px;
+    padding-left: 8px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #175EF0;
+    opacity: 0.9;
+    z-index: 3;
+    transition: all 0.5s ease-out;
+}
+
+.navbar:hover {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.navbar a, .navbar span {
+    color: #ffffff;
+}
+
+.container, .container-fluid {
+    margin: 20px auto;
+}
+
+.carousel {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .firts-title::after {
+        content: ": Landscape phones, 576px and up";
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .firts-title::after {
+        content: ": Tablets, 768px and up";
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .firts-title::after {
+        content: ": Desktops, 992px and up";
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .firts-title::after {
+        content: ": Large desktops, 1200px and up";
+    }
+}
