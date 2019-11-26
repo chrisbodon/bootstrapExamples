@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/font-awesome/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .row div[class^="col"] {
+            border: 1px solid #EC2004;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,41 +65,158 @@
 
     <div class="container-fluid text-center">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col">
                 <h1>Grid System</h1>
+                <p>Bootstrap, funciona con un sistema de grillas de 12 columnas. Usa flexbox y es necesario que, cada
+                    estructura, esté dentro de un <code>.container</code>.</p>
             </div>
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <p>It works</p>
-            </div>
-            <div class="col">
-                <p>Really well</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <p>It works</p>
-            </div>
-            <div class="col-lg-6">
-                <p>Really well</p>
+            <div class="col-sm">
+                <p>Dividimos la fila en tres columnas, a partir del breakpoint SM.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                <p>It works</p>
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
             <div class="col-sm">
-                <p>Really well</p>
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
             <div class="col-sm">
-                <p>Really well</p>
+                <span class="d-none d-sm-block">4</span>
+                <span class="d-block d-sm-none">12</span>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Disponemos de 12 columnas y 5 breakpoints.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Disponemos de 5 breakpoints, y también se pueden especificar las columnas que ocupan.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">1</div>
+            <div class="col-xs-12 col-md-6 col-lg-4">1</div>
+            <div class="col-xs-12 col-md-6 col-lg-4">1</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Se puede alinear verticalmente.</p>
+            </div>
+        </div>
+        <div style="min-height: 200px;border: 1px solid #000000;" class="row align-items-start">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div style="min-height: 200px;border: 1px solid #000000;" class="row align-items-center">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+        <div style="min-height: 200px;border: 1px solid #000000;" class="row align-items-end">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Cuenta con ordenación. Tenemos 6 divs en dos columnas, para portátiles, pero en móvil, la quinta debe
+                    ser la primera.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 order-lg-5">
+                5
+            </div>
+            <div class="col-4 order-lg-1">
+                1
+            </div>
+            <div class="col-4 order-lg-2">
+                2
+            </div>
+            <div class="col-4 order-lg-3">
+                3
+            </div>
+            <div class="col-4 order-lg-4">
+                4
+            </div>
+            <div class="col-4 order-lg-6">
+                6
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p>Tenemos 3 columnas que ocupan 3 espacios, pero de la segunda a la tercera, debe quedar un hueco. Eso
+                    es el offset.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-3 offset-md-2">.col-md-3 .offset-md-2</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Cristian Bodón <a href="https://github.com/chrisbodon/bootstrapExamples" target="_blank"><span class="fab fa-github-square"></span></a></p>
+    </footer>
 
     <!-- JS -->
     <script src="js/jquery-3.4.1.min.js"></script>

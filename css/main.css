@@ -1,16 +1,22 @@
 body {
     background-color: #F2EDF3;
     color: #175EF0;
-    font-family: 'AmericanCaptain';
+    font-family: sans-serif;
     letter-spacing: 1px;
 }
 
 h1 {
     color: #162CA2;
+    font-family: 'AmericanCaptain';
 }
 
 h2 {
     color: #862528;
+    font-family: 'AmericanCaptain';
+}
+
+a {
+    font-family: 'AmericanCaptain';
 }
 
 .intro-wrapper {
@@ -82,6 +88,25 @@ h2 {
 .carousel {
     max-width: 600px;
     margin: auto;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #862528;
+    color: #ffffff;
+}
+
+footer * {
+    margin: 0px;
+}
+
+footer a {
+    font-size: 35px;
+    color: #ffffff;
+    vertical-align: middle;
 }
 
 /* Small devices (landscape phones, 576px and up) */
